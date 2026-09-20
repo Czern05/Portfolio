@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Professional portfolio of Cyril Rodriguez, Web Developer and IT Professional.">
+    <title>Cyril Rodriguez | Professional Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function () {
+            const storedTheme = localStorage.getItem('portfolio-theme');
+            const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.dataset.theme = storedTheme || (systemDark ? 'dark' : 'light');
+        })();
+    </script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="logo" href="#home" aria-label="Cyril Rodriguez home">
+                <span class="logo-mark">CR</span>
+                <span class="logo-text">Cyril<span>Portfolio</span></span>
+            </a>
+
+            <div class="nav-actions">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+                    <span class="theme-icon" aria-hidden="true">◐</span>
+                    <span class="theme-label">Theme</span>
+                </button>
+
+                <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-decoration hero-decoration-one" aria-hidden="true"></div>
+            <div class="hero-decoration hero-decoration-two" aria-hidden="true"></div>
+
+            <div class="hero-inner">
+                <div class="hero-text reveal">
+                    <p class="eyebrow"><span>01</span> Welcome to my portfolio</p>
+                    <h1>Hello, I'm <span>Cyril Rodriguez</span></h1>
+                    <h2>Web Developer &amp; IT Professional</h2>
+                    <p class="hero-copy">
+                        I create modern, responsive, and user-friendly websites using HTML, CSS, and other web technologies.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">View My Work <span aria-hidden="true">→</span></a>
+                        <a href="#contact" class="btn secondary">Contact Me</a>
+                    </div>
+
+                    <div class="dual-text-tabs" aria-label="Quick professional information">
+                        <div class="dual-text-tab">
+                            <span>Current role</span>
+                            <strong>Web Developer</strong>
+                        </div>
+                        <div class="dual-text-tab">
+                            <span>Primary focus</span>
+                            <strong>Responsive Web Development</strong>
+                        </div>
+                    </div>
+
+                    <div class="hero-meta" aria-label="Portfolio highlights">
+                        <div><strong>3+</strong><span>Years experience</span></div>
+                        <div><strong>03</strong><span>Featured projects</span></div>
+                        <div><strong>PH</strong><span>Based in Philippines</span></div>
+                    </div>
+                </div>
+
+                <aside class="profile-card reveal" aria-label="Profile summary">
+                    <div class="profile-card-topline">
+                        <span>Profile / 2026</span>
+                        <span class="status-dot" title="Available"></span>
+                    </div>
+                    <div class="profile-image" aria-hidden="true">CR</div>
+                    <h2>Cyril Rodriguez</h2>
+                    <p>Web Developer</p>
+                    <div class="status"><span></span>Available for work</div>
+                    <div class="profile-divider"></div>
+                    <p class="profile-note">Build thoughtfully. Learn continuously. Keep it useful.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section section-surface">
+            <div class="section-heading reveal">
+                <p class="eyebrow"><span>02</span> Get to know me</p>
+                <div>
+                    <h2>About</h2>
+                    <p>Professional information and experience, presented clearly and without clutter.</p>
+                </div>
+            </div>
+
+            <div class="about-container">
+                <article class="about-text reveal">
+                    <h3>Professional Information</h3>
+                    <p>
+                        I am Cyril Rodriguez, a passionate IT professional and aspiring web developer interested in creating useful and innovative digital solutions.
+                    </p>
+                    <p>
+                        I enjoy designing websites, learning new technologies, solving technical problems, and developing creative digital projects.
+                    </p>
+
+                    <div class="information">
+                        <div><strong>Name</strong><span>Cyril Rodriguez</span></div>
+                        <div><strong>Profession</strong><span>Web Developer</span></div>
+                        <div><strong>Experience</strong><span>3+ Years</span></div>
+                        <div><strong>Location</strong><span>Philippines</span></div>
+                        <div><strong>Email</strong><a href="mailto:cyril05200013@gmail.com">cyril05200013@gmail.com</a></div>
+                        <div><strong>Availability</strong><span class="available">Available</span></div>
+                    </div>
+                </article>
+
+                <aside class="experience-box reveal">
+                    <div class="panel-kicker">Career timeline</div>
+                    <h3>My Experience</h3>
+
+                    <div class="experience">
+                        <div class="experience-marker" aria-hidden="true"></div>
+                        <div class="experience-head">
+                            <div>
+                                <h4>Web Developer</h4>
+                                <p class="company">ABC Technologies</p>
+                            </div>
+                            <p class="date">2024 - Present</p>
+                        </div>
+                        <p>Developing responsive websites and maintaining web applications.</p>
+                    </div>
+
+                    <div class="experience">
+                        <div class="experience-marker" aria-hidden="true"></div>
+                        <div class="experience-head">
+                            <div>
+                                <h4>IT Assistant</h4>
+                                <p class="company">XYZ Company</p>
+                            </div>
+                            <p class="date">2022 - 2024</p>
+                        </div>
+                        <p>Provided technical support and maintained computer systems.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- SKILLS / TECH STACK SECTION -->
+        <section id="skills" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow"><span>03</span> Technical skills</p>
+                <div>
+                    <h2>Tech Stack</h2>
+                    <p>A focused overview of the languages, web technologies, tools, and databases I use in development.</p>
+                </div>
+            </div>
+
+            <div class="skill-groups" aria-label="Technical skills grouped by category">
+                <article class="skill-group reveal">
+                    <span class="skill-group-index">01</span>
+                    <h3>Languages</h3>
+                    <div class="skill-pills">
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>SQL</span>
+                    </div>
+                </article>
+
+                <article class="skill-group reveal">
+                    <span class="skill-group-index">02</span>
+                    <h3>Web Development</h3>
+                    <div class="skill-pills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Bootstrap</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </article>
+
+                <article class="skill-group reveal">
+                    <span class="skill-group-index">03</span>
+                    <h3>Tools &amp; Databases</h3>
+                    <div class="skill-pills">
+                        <span>Git / GitHub</span>
+                        <span>MySQL</span>
+                        <span>Database Design</span>
+                        <span>Version Control</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="skills-note reveal">
+                <span class="mini-label">Core focus</span>
+                <p>Building responsive, database-backed web experiences while continuously expanding my development toolkit.</p>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section section-surface">
+            <div class="section-heading reveal">
+                <p class="eyebrow"><span>04</span> My recent work</p>
+                <div>
+                    <h2>Projects</h2>
+                    <p>Selected work with concise context, technology tags, and direct project access.</p>
+                </div>
+            </div>
+
+            <div class="projects-container">
+                <article class="project-card reveal">
+                    <div class="project-number">01</div>
+                    <div class="project-image blue"><span>WEB</span></div>
+                    <div class="project-content">
+                        <h3>Business Website</h3>
+                        <p>A responsive professional website designed for a small business.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span></div>
+                        <a href="#" class="project-link">View Project <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-number">02</div>
+                    <div class="project-image purple"><span>APP</span></div>
+                    <div class="project-content">
+                        <h3>Student Management System</h3>
+                        <p>A system for managing student records, information, and academic data.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span><span>PHP</span></div>
+                        <a href="#" class="project-link">View Project <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-number">03</div>
+                    <div class="project-image green"><span>PORTFOLIO</span></div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio</h3>
+                        <p>A personal portfolio website showcasing professional skills and projects.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span></div>
+                        <a href="#" class="project-link">View Project <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="certifications" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow"><span>05</span> Credentials</p>
+                <div>
+                    <h2>Certifications</h2>
+                    <p>A dedicated space for verified courses, certifications, and professional learning credentials.</p>
+                </div>
+            </div>
+
+            <div class="certifications-shell reveal" aria-label="Certification showcase">
+                <button class="cert-arrow cert-prev" type="button" aria-label="Previous certification" disabled>←</button>
+
+                <article class="cert-card" data-certification-card>
+                    <div class="cert-number">01</div>
+                    <div class="cert-content">
+                        <span class="cert-label">Certification profile</span>
+                        <h3>Certification details to be added</h3>
+                        <p>
+                            This section is ready for your verified certification name, issuing organization,
+                            completion date, and credential or verification link.
+                        </p>
+                        <div class="cert-meta">
+                            <span>Awaiting credential details</span>
+                            <span>Verification link ready</span>
+                        </div>
+                    </div>
+                </article>
+
+                <button class="cert-arrow cert-next" type="button" aria-label="Next certification" disabled>→</button>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section section-surface">
+            <div class="section-heading reveal">
+                <p class="eyebrow"><span>06</span> Get in touch</p>
+                <div>
+                    <h2>Contact Me</h2>
+                    <p>Open to projects, opportunities, and conversations about useful digital work.</p>
+                </div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info reveal">
+                    <h3>Let's Work Together</h3>
+                    <p>Have a project or opportunity? Feel free to contact me.</p>
+
+                    <div class="contact-list">
+                        <div class="contact-item"><strong>Email</strong><a href="mailto:cyril05200013@gmail.com">cyril05200013@gmail.com</a></div>
+                        <div class="contact-item"><strong>Phone</strong><a href="tel:+639917307889">+63 991 730 7889</a></div>
+                        <div class="contact-item"><strong>Location</strong><span>Philippines</span></div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" aria-label="Your Name" required>
+                        <input type="email" placeholder="Your Email" aria-label="Your Email" required>
+                    </div>
+                    <input type="text" placeholder="Subject" aria-label="Subject" required>
+                    <textarea rows="6" placeholder="Your Message" aria-label="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message <span aria-hidden="true">→</span></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Cyril <span>Rodriguez</span></h2>
+                <p>Web Developer &amp; IT Professional</p>
+            </div>
+
+            <div class="social-links" aria-label="Social media links">
+                <a href="https://www.facebook.com/rodricyr/" target="_blank" rel="noopener noreferrer" aria-label="Open Cyril Rodriguez on Facebook in a new tab">Facebook <span aria-hidden="true">↗</span></a>
+                <a href="https://www.linkedin.com/in/cyril-rodriguez-156a00438/" target="_blank" rel="noopener noreferrer" aria-label="Open Cyril Rodriguez on LinkedIn in a new tab">LinkedIn <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Czern05" target="_blank" rel="noopener noreferrer" aria-label="Open Cyril Rodriguez on GitHub in a new tab">GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+
+            <p class="copyright">© 2026 Cyril Rodriguez. All Rights Reserved.</p>
+
+            <a class="back-to-top" href="#home" aria-label="Back to home" title="Back to home">↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
