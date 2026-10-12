@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Cyril Rodriguez, Computer Science student.">
+  <title>Cyril Rodriguez | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home">Cyril Rodriguez<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#certifications">Certifications</a><a href="#resume">Resume</a><a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme">Light mode</button>
+  </header>
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow hero-kicker">WELCOME TO MY PORTFOLIO <i></i></p>
+        <h1>Hello, I'm<br><span>Cyril Rodriguez</span></h1>
+        <h2>Computer Science Student &amp; Web Developer</h2>
+        <p class="lead">I create modern, responsive, and user-friendly websites while building practical software projects and growing my skills in web technologies.</p>
+        <div class="actions"><a class="button" href="#projects">View My Work <span aria-hidden="true">→</span></a><a class="button secondary" href="#contact">Contact Me</a></div>
+        <div class="hero-facts"><div><span>CURRENT ROLE</span><strong>Computer Science Student</strong></div><div><span>PRIMARY FOCUS</span><strong>Responsive Web Development</strong></div></div>
+      </div>
+      <aside class="profile-card" aria-label="Profile summary">
+        <div class="profile-top"><span>PROFILE</span></div>
+        <div class="avatar-ring"><div class="avatar"><span class="avatar-fallback">CR</span><img class="profile-photo" src="assets/profile/profile.jpg" alt="Cyril Rodriguez profile photo" onerror="this.hidden=true"></div></div>
+        <h2>Cyril Rodriguez</h2>
+        <p class="profile-role">Computer Science Student</p>
+        <p class="availability"><i></i> Building and learning continuously</p>
+        <hr>
+        <p class="profile-motto">BUILD THOUGHTFULLY. LEARN CONTINUOUSLY.<br>KEEP IT USEFUL.</p>
+      </aside>
+    </section>
+
+    <section id="about" class="section split-section">
+      <header><p class="eyebrow">ABOUT</p><h2>About me</h2></header>
+      <div class="two-column">
+        <div><h3>Profile</h3><p>I'm a Computer Science student interested in creating useful digital experiences, learning new technologies, and solving technical problems through hands-on projects.</p><h3>Education</h3><p>Computer Science · Third-year undergraduate</p></div>
+        <div><h3>Leadership &amp; involvement</h3><p><strong>Auditor · Junior Philippine Computer Society (JPCS)</strong></p><p>Served as an organization officer for three years, contributing to accountability and organizational activities.</p></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>Projects</h2></div><p class="muted">Academic and personal work, with project screenshots and details.</p></div>
+      <div class="project-grid" id="project-list"></div>
+    </section>
+
+    <section id="skills" class="section split-section">
+      <header><p class="eyebrow">TOOLKIT</p><h2>Tech stack</h2></header>
+      <div><p class="muted section-intro">Technologies and tools I have used in coursework and projects.</p><div id="skill-list" class="skills-grid"></div></div>
+    </section>
+
+    <section id="certifications" class="section split-section">
+      <header><p class="eyebrow">LEARNING</p><h2>Certifications</h2></header>
+      <div id="cert-list"></div>
+    </section>
+
+    <section id="resume" class="section split-section">
+      <header><p class="eyebrow">DOCUMENT</p><h2>Resume</h2></header>
+      <div class="resume-row"><div><h3>Resume PDF</h3><p class="muted">A concise overview of my education, skills, projects, and organizational experience.</p><p id="resume-note" class="muted small">Add your PDF to <code>assets/resume/</code> and update <code>resumeFile</code> in <code>config.js</code>.</p><div id="resume-actions" class="actions"></div></div><a id="resume-preview" class="resume-preview" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open resume PDF" hidden><img alt="Preview of Cyril Rodriguez's resume" loading="lazy"></a></div>
+    </section>
+
+    <section id="contact" class="section split-section">
+      <header><p class="eyebrow">SAY HELLO</p><h2>Contact</h2></header>
+      <div class="contact-row"><div><p>For project inquiries, collaboration, or professional opportunities, feel free to reach out.</p><a class="email" href="mailto:cyril05200013@gmail.com">cyril05200013@gmail.com</a></div><div class="social-links"><a href="https://github.com/Czern05" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/cyril-rodriguez-156a00438/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://www.facebook.com/rodricyr/" target="_blank" rel="noopener noreferrer">Facebook ↗</a></div></div>
+    </section>
+  </main>
+  <footer><span>Cyril Rodriguez · Portfolio</span><a href="#home">Back to top ↑</a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Close project details">×</button><div id="project-detail"></div></dialog>
+  <dialog id="cert-dialog" class="cert-dialog" aria-label="Certificate preview"><button class="dialog-close cert-close" type="button" aria-label="Close certificate preview">×</button><img id="cert-dialog-image" alt=""></dialog>
+  <script src="config.js?v=3"></script><script src="script.js?v=3"></script>
+</body>
+</html>
