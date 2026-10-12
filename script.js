@@ -26,7 +26,7 @@ const CONTENT = {
       features: ['Responsive minimalist layout with light and dark themes', 'Theme preference saved between visits when browser storage is available', 'Dynamic project cards and detail dialogs with screenshots, overview, role, learning notes, features, and technology tags', 'Project screenshot placeholders for projects without images', 'Grouped tech-stack listings and dynamically rendered certification entries', 'Configurable resume PDF view and download links', 'Profile photo with initials fallback, plus About and JPCS leadership information', 'Direct email and social profile links', 'Semantic HTML and keyboard-accessible native project dialog'],
       role: 'Designed and built the portfolio.',
       learning: 'Practiced responsive layouts, accessible interactions, and organizing content with plain JavaScript.',
-      image: '' // Add screenshot path, e.g. 'assets/projects/portfolio.webp'
+      image: 'assets/projects/portfolio.webp' // Portfolio home page screenshot
     }
   ],
   skills: {
